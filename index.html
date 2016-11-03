@@ -3,10 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Unicorn</title>
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Source Sans Pro" rel="stylesheet">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,700" rel="stylesheet">
 </head>
+
+<!-- 					<li class="portfolio_item">
+						<img src="images/portfolio4.png" alt="Portfolio item 4">
+					</li> -->
 <body>
 	<div class="main_wrap">
 		<section class="header_wrap">
@@ -32,17 +36,23 @@
 								<a href="#">Hello</a>
 							</li>
 						</ul>
-						<div class="menu_item burgher-menu">
-							<div class="stripe"> </div>
-							<div class="stripe"> </div>
-							<div class="stripe"> </div>
-						</div>
 					</menu>
+						<button class="burgher-menu">
+							<div class="stripe"> </div>
+							<div class="stripe"> </div>
+							<div class="stripe"> </div>
+						</button>
 				</div>
 				<div class="text_block">
-					<div class="h1_text">Storyteller</div>
-					<p class="text_description">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. 
-					</p>
+					<h1 class="h1_text">Storyteller</h1>
+					<div class="h1_after"></div>
+					<div class="text_descrition_parent">
+						<div class="text_description">
+							<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. 
+							</p>
+						</div>						
+					</div>
+					<br>
 					<div class="top_button">
 						<a href="#">read the rest</a>
 					</div>
@@ -50,7 +60,7 @@
 			</div>
 		</section>
 		<section class="about">
-			<div class="who_why">
+			<div class="title">
 				<img src="images/broccoli.png" alt="broccoli_icon">
 				<h2>Who & Why</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the evening. But Gregor found it easy to give up having the door open, he had, after all, often failed to make use of it when it was open and, without the family having noticed it, lain in his room in its darkest corner. One time, though, the charwoman left the door.</p>
@@ -76,7 +86,7 @@
 			</div>
 		</section>
 		<section class="news">
-			<div class="title_news">
+			<div class="title">
 				<h2>Featured Articles</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
 			</div>
@@ -100,7 +110,7 @@
 					</li>
 					<li class="article">
 						<h3>travel</h3>
-						<p class="description">journey to the center of the earth with jefferson </p>
+						<p class="description">Journey to the center of the earth with jefferson </p>
 						<div class="author">
 							<img src="images/photo3.png" alt="photo">
 							<p>Mason Johnston<br>21/08/2013</p>
@@ -111,19 +121,332 @@
 		</section>
 		<section class="clients">
 			<div class ="content_clients">
-				<img src="images/vector-smart-object.png" alt="photo">
+				<img src="images/vector-smart-object.png" alt="logos_of_clients">
 			</div>
 		</section>
+		<section class="portfolio">
+			<div class="title">
+				<h2>Portfolio & Screenshots</h2>
+				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
+			</div>
+			<menu class="portfolio_tabs_wrap">
+				<ul class="portfolio_tabs">
+					<li class="portfolio_tabs_item">
+						<a href="#">Art</a>
+					</li>
+					<li class="portfolio_tabs_item">
+						<a href="#">Mystery</a>
+					</li>
+					<li class="portfolio_tabs_item">
+						<a href="#">Illusion</a>
+					</li>
+					<li class="portfolio_tabs_item">
+						<a href="#">Travel</a>
+					</li>
+					<li class="portfolio_tabs_item">
+						<a href="#">Paintings</a>
+					</li>
+				</ul>
+			</menu>
+			<div class="portfolio_wrap">
+				<ul class="portfolio_list">
+					<li class="portfolio_item">
+						<img src="images/portfolio1.png" alt="Portfolio item 1">
+					</li>
+					<li class="portfolio_item">
+						<img src="images/portfolio2.png" alt="Portfolio item 2">
+					</li>
+					<li class="portfolio_item">
+						<img src="images/portfolio3.png" alt="Portfolio item 3">
+					</li>
 
+				</ul>
+			</div>
+			<div class="circles_pagination">
+				<div class="circle_page"></div>
+				<div class="circle_page"></div>
+				<div class="circle_page"></div>
+				<div class="circle_page"></div>
+			</div>
+			<div class="citation">
+				<div class="citation_content">
+					<div class="citation_icon">
+						<img src="images/Citation_icon.png" alt="quote">
+					</div>
+					<p class="citation_text">
+						Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every<br> minute with love, grace & gratitude.
+					</p>
+					<p class="citation_author">
+						Denis Waitley
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="team">
+			<div class="title">
+				<h2>Team Members</h2>
+				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
+			</div>
+			<div class="carricatures">
+				<ul class="carricatures_list">
+					<li class="carricature">
+						<img src="images/face1.png" alt="carricture of team member">
+						<h3>James Philly</h3>
+						<p>Lead Developer</p>
+					</li>
+					<li class="carricature">
+						<img src="images/face2.png" alt="carricture of team member">
+						<h3>Cactus Jack</h3>
+						<p>3D Model Designer</p>
+					</li>
+					<li class="carricature">
+						<img src="images/face3.png" alt="carricture of team member">
+						<h3>Jack Sparrow</h3>
+						<p>Master of All Trade</p>
+					</li>
+					<li class="carricature">
+						<img src="images/face4.png" alt="carricture of team member">
+						<h3>Yaga Squarehead</h3>
+						<p>Manages Money</p>
+					</li>
+				</ul>
+		</section>
+		<section class="facts">
+			<h2>Facts & Numbers</h2>
+			<div class="facts_text">
+					<ul class="facts_list">
+						<li class="facts_item">
+							<h3>110</h3>
+							<p>successful projects</p>							
+						</li>
+						<li class="facts_item">
+							<h3>25</h3>
+							<p>awesome clients</p>							
+						</li>
+						<li class="facts_item">
+							<h3>30</h3>
+							<p>open source plugins</p>							
+						</li>
+						<li class="facts_item">
+							<h3>13</h3>
+							<p>open source themes</p>							
+						</li>
+					</ul>	
+					<div class="facts_background"></div>			
+			</div>
+		</section>
+		<section class="blog_articles">
+			<div class="blog_articles_wrap">
+				<ul class="blog_articles_list">
+		            <li class="articles_item_right">
+		            	<div class="item_text">
+							<div class="blog_details">Travel / 21st March, 2014
+							</div>
+		            		<h3>A New Product Is Coming 
+		            		</h3>
+			                <p class="list_article">The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.
+			                </p>
+			             </div>
+		                <figure class="list_photo">
+		                    <img src="images/news1.png" alt="image describing article">
+		                </figure>
+		            </li>
+		            <li class="articles_item_left">
+		                <figure class="list_photo">
+		                    <img src="images/news2.png" alt="image describing article">
+		                </figure>
+		            	<div class="item_text">
+							<div class="blog_details">Gadget / 3rd March, 2014
+							</div>
+		            		<h3>A New Product Is Coming 
+		            		</h3>
+			                <p class="list_article">The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.
+			                </p>
+			             </div>
+		            </li>
+		            <li class="articles_item_right">
+		            	<div class="item_text">
+							<div class="blog_details">Travel / 21st March, 2014
+							</div>
+		            		<h3>A New Product Is Coming 
+		            		</h3>
+			                <p class="list_article">The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.
+			                </p>
+			             </div>
+		                <figure class="list_photo">
+		                    <img src="images/news3.png" alt="image describing article">
+		                </figure>
+		            </li>
+	        	</ul>
+			</div>
+			<div class="more_articles">
+				<ul class="more_articles_list">
+					<li class="more_article">
+						<div class="article_line"> </div>
+						<div class="article_text">
+							<h3>Another Day In Paradise</h3>
+							<p>Travel / 21st March, 2014</p>
+						</div>
+					</li>
+					<li class="more_article">
+						<div class="article_line"> </div>
+						<div class="article_text">
+							<h3>Jimmy’s New Book on Aliens</h3>
+							<p>Personal / 21st March, 2014</p>
+						</div>
+					</li>
+					<li class="more_article">
+						<div class="article_line"> </div>
+						<div class="article_text">
+							<h3>Sarah’s New House</h3>
+							<p>Personal / 21st March, 2014</p>
+						</div>
+					</li>
+				</ul>				
+			</div>
+		</section>
+		<section class="tweets">
+			<div class="tweets_content">
+				<div class="tweeter_icon">
+					<img src="images/twitter_icon.png" alt="twitter_icon">
+				</div>
+				<div class="tweets_text">
+					<img src="images/photo2.png" alt="photo">
+					<p class="tweets_message">
+						Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every <br> minute with love, grace & gratitude.
+					</p>				
+					<p class="tweets_signature">@loveless
+					</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer_content">
+				<div class="footer_top clearfix">
+					<div class="top_left">
+						<div class="footer_intro">	
+							<img src="images/logo_white.png" alt="logotype">
+								<p> One morning, when Gregor Samsa woke from troubled dreams, he found </br>himself transformed in his bed into a horrible vermin. He lay on his</p>
+						</div>
+						<div class="footer_form">
+							<form class="contact_form clearfix">
+								
+								<input class="email_field" type="text" placeholder="Email" name="user_name">
+
+								<input class="subject_field" type="text" placeholder="Subject" name="user_email">
+
+								<textarea class="message_field" placeholder="Message" name=""></textarea>
+
+								<input class="form_button" type="submit" name="button" value="Send">
+							</form>
+						</div>
+					</div>	
+					<div class="top_right">
+						<div class="footer_links">
+							<ul class="links_list">
+								<li class="link_column">
+									<h3>Links</h3>	
+										<ul class="list_inside">
+											<li>
+												<a href="#">Home</a>
+											</li>
+											<li>
+												<a href="#">Services</a>
+											</li>
+											<li>
+												<a href="#">Menu</a>
+											</li>
+											<li>
+												<a href="#">Restaurants</a>
+											</li>
+											<li>
+												<a href="#">About</a>
+											</li>
+											<li>
+												<a href="#">Work Hours</a>
+											</li>	
+											<li>
+												<a href="#">Call Hours</a>
+											</li>
+										</ul>
+								</li>
+								<li class="link_column">
+									<h3>Friends</h3>	
+									<ul class="list_inside">
+										<li>
+											<a href="#">Home</a>
+										</li>
+										<li>
+											<a href="#">About</a>
+										</li>	
+										<li>
+											<a href="#">Services</a>
+										</li>
+										<li>
+											<a href="#">Menu</a>
+										</li>
+										<li>
+											<a href="#">Restaurants</a>
+										</li>
+									</ul>
+								</li>
+								<li class="link_column">
+									<h3>Social</h3>	
+									<ul class="list_inside">
+										<li>
+											<a href="#">Facebook</a>
+										</li>
+										<li>
+											<a href="#">Twitter</a>
+										</li>	
+										<li>
+											<a href="#">Github</a>
+										</li>
+										<li>
+											<a href="#">Pinterest</a>
+										</li>
+										<li>
+											<a href="#">Google Plus</a>
+										</li>
+										<li>
+											<a href="#">Dribble</a>
+										</li>
+										<li>
+											<a href="#">Flickr</a>
+										</li>
+										<li>
+											<a href="#">Others</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer_bottom cleafix">
+					<div class="bottom_left">
+						<p> One morning, when Gregor Samsa woke from troubled dreams, he found <br> © 2015 Your Awesome Company 
+						</p>				
+					</div>
+					<div class="bottom_right">
+						<ul class="right_list">
+							<li class="right_list_item">
+								<a href="#">Terms</a>
+							</li>
+							<li class="right_list_item">
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li class="right_list_item">
+								<a href="#">Contact</a>
+							</li>
+							<li class="right_list_item">
+								<a href="#">Job</a>
+							</li>
+						</ul>
+					</div>			
+				</div>
+			</div>
+		</footer> 
 	</div>	
-
 </body>
 </html>
-
-
-
-
-
-
-
-
