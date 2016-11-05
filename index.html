@@ -14,8 +14,8 @@
 <body>
 	<div class="main_wrap">
 		<section class="header_wrap">
-			<div class="bg_top">
-			</div>	
+<!-- 			<div class="bg_top">
+			</div> -->	
 			<div class="container content_top">
 				<div class="logo_menu_wrap">
 					<figure class="logo">
@@ -37,11 +37,32 @@
 							</li>
 						</ul>
 					</menu>
-						<button class="burgher-menu">
+					<input type="checkbox" id="menu-btn">
+					<label for="menu-btn" class="burgher-menu">
 							<div class="stripe"> </div>
 							<div class="stripe"> </div>
 							<div class="stripe"> </div>
-						</button>
+					</label>
+					<ul class="menu_in_burgher">
+						<li class="menu_item_burgher">
+							<a href="#">Home</a>
+						</li>
+						<li class="menu_item_burgher">
+							<a href="#">About</a>
+						</li>
+						<li class="menu_item_burgher">
+							<a href="#">Stories</a>
+						</li>
+						<li class="menu_item_burgher">
+							<a href="#">Hello</a>
+						</li>
+						<li class="menu_item_burgher">
+							<a href="#">Media</a>
+						</li>
+						<li class="menu_item_burgher">
+							<a href="#">Contact</a>
+						</li>
+					</ul>
 				</div>
 				<div class="text_block">
 					<h1 class="h1_text">Storyteller</h1>
@@ -60,7 +81,7 @@
 			</div>
 		</section>
 		<section class="about">
-			<div class="title">
+			<div class="intro_text">
 				<img src="images/broccoli.png" alt="broccoli_icon">
 				<h2>Who & Why</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the evening. But Gregor found it easy to give up having the door open, he had, after all, often failed to make use of it when it was open and, without the family having noticed it, lain in his room in its darkest corner. One time, though, the charwoman left the door.</p>
@@ -86,7 +107,7 @@
 			</div>
 		</section>
 		<section class="news">
-			<div class="title">
+			<div class="intro_text">
 				<h2>Featured Articles</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
 			</div>
@@ -121,33 +142,52 @@
 		</section>
 		<section class="clients">
 			<div class ="content_clients">
-				<img src="images/vector-smart-object.png" alt="logos_of_clients">
+				<ul class="clients_logos">
+					<li class="client_logo">
+						<img src="images/client1.png" alt="logo of a client">
+					</li>	
+					<li class="client_logo">
+						<img src="images/client2.png" alt="logo of a client">
+					</li>
+					<li class="client_logo">
+						<img src="images/client3.png" alt="logo of a client">
+					</li>
+					<li class="client_logo">
+						<img src="images/client4.png" alt="logo of a client">
+					</li>
+					<li class="client_logo">
+						<img src="images/client5.png" alt="logo of a client">
+					</li>
+					<li class="client_logo">
+						<img src="images/client6.png" alt="logo of a client">
+					</li>
+				</ul>
 			</div>
 		</section>
 		<section class="portfolio">
-			<div class="title">
+			<div class="intro_text">
 				<h2>Portfolio & Screenshots</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
 			</div>
-			<menu class="portfolio_tabs_wrap">
-				<ul class="portfolio_tabs">
-					<li class="portfolio_tabs_item">
-						<a href="#">Art</a>
-					</li>
-					<li class="portfolio_tabs_item">
-						<a href="#">Mystery</a>
-					</li>
-					<li class="portfolio_tabs_item">
-						<a href="#">Illusion</a>
-					</li>
-					<li class="portfolio_tabs_item">
-						<a href="#">Travel</a>
-					</li>
-					<li class="portfolio_tabs_item">
-						<a href="#">Paintings</a>
-					</li>
-				</ul>
-			</menu>
+			<!-- <menu class="portfolio_tabs_wrap"> -->
+			<ul class="portfolio_tabs">
+				<li class="portfolio_tabs_item">
+					<a href="#">Art</a>
+				</li>
+				<li class="portfolio_tabs_item">
+					<a href="#">Mystery</a>
+				</li>
+				<li class="portfolio_tabs_item">
+					<a href="#">Illusion</a>
+				</li>
+				<li class="portfolio_tabs_item">
+					<a href="#">Travel</a>
+				</li>
+				<li class="portfolio_tabs_item">
+					<a href="#">Paintings</a>
+				</li>
+			</ul>
+			<!-- </menu> -->
 			<div class="portfolio_wrap">
 				<ul class="portfolio_list">
 					<li class="portfolio_item">
@@ -183,7 +223,7 @@
 			</div>
 		</section>
 		<section class="team">
-			<div class="title">
+			<div class="intro_text">
 				<h2>Team Members</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
 			</div>
@@ -221,7 +261,8 @@
 						</li>
 						<li class="facts_item">
 							<h3>25</h3>
-							<p>awesome clients</p>							
+							<p>awesome 
+							</p>							
 						</li>
 						<li class="facts_item">
 							<h3>30</h3>
@@ -336,8 +377,12 @@
 								<input class="subject_field" type="text" placeholder="Subject" name="user_email">
 
 								<textarea class="message_field" placeholder="Message" name=""></textarea>
-
-								<input class="form_button" type="submit" name="button" value="Send">
+								<button>
+									<input class="form_button" type="submit" name="button" value="Send">
+									<div class="triangle">
+										<img src="images/triangle.png" alt="triangle_icon">
+									</div>
+								</button>
 							</form>
 						</div>
 					</div>	
@@ -423,7 +468,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer_bottom cleafix">
+				<div class="footer_bottom clearfix">
 					<div class="bottom_left">
 						<p> One morning, when Gregor Samsa woke from troubled dreams, he found <br> © 2015 Your Awesome Company 
 						</p>				
