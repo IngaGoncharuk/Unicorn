@@ -4,57 +4,77 @@
 	<meta charset="UTF-8">
 	<title>Unicorn</title>
 	<link rel="stylesheet" href="style/reset.css">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://fonts.googleapis.com/
+	css?family=Source+Sans+Pro:400,500,700" rel="stylesheet">
+<!-- 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> -->
+<!-- 			<div class="portfolio_wrap">
+				<ul class="portfolio_list">
+					<li class="portfolio_item">
+						<img src="images/portfolio1.png" alt="Portfolio item 1">
+					</li>
+					<li class="portfolio_item">
+						<img src="images/portfolio2.png" alt="Portfolio item 2">
+					</li>
+					<li class="portfolio_item">
+						<img src="images/portfolio3.png" alt="Portfolio item 3">
+					</li>
+
+				</ul>
+			</div> -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
+
+<!-- 					<li class="portfolio_item">
+						<img src="images/portfolio4.png" alt="Portfolio item 4">
+					</li> -->
 <body>
 	<div class="main_wrap">
 		<section class="header_wrap">
-			<div class="bg_top">
-			</div>	
 			<div class="container content_top">
 				<div class="logo_menu_wrap">
 					<figure class="logo">
 						<img src="images/logo.png" alt="logotype">
 					</figure>
-					<menu>
-						<ul class="menu_wrap">
-							<li class="menu_item">
-								<a href="#">Home</a>
-							</li>
-							<li class="menu_item">
-								<a href="#">About</a>
-							</li>
-							<li class="menu_item">
-								<a href="#">Stories</a>
-							</li>
-							<li class="menu_item">
-								<a href="#">Hello</a>
-							</li>
-						</ul>
-						<button class="burgher-menu">
-							<div class="stripe"> </div>
-							<div class="stripe"> </div>
-							<div class="stripe"> </div>
-						</button>
+					<menu class="menu_wrap">
+						<a class="menu_item" href="#">Home</a>
+						<a class="menu_item" href="#">About</a>
+						<a class="menu_item" href="#">Stories</a>
+						<a class="menu_item" href="#">Hello</a>
 					</menu>
+					<input type="checkbox" id="menu-btn">
+					<label for="menu-btn" class="burgher-menu">
+							<div class="stripe"> </div>
+							<div class="stripe"> </div>
+							<div class="stripe"> </div>
+					</label>
+					<nav class="menu_in_burgher">
+						<a class="menu_item_burgher" href="#">Home</a>
+						<a class="menu_item_burgher" href="#">About</a>
+						<a class="menu_item_burgher" href="#">Stories</a>
+						<a class="menu_item_burgher" href="#">Hello</a>
+						<a class="menu_item_burgher" href="#">Media</a>
+						<a class="menu_item_burgher" href="#">Contact</a>
+					</nav>
 				</div>
 				<div class="text_block">
 					<h1 class="h1_text">Storyteller</h1>
-<!-- 					<div class="h1_after"></div> -->
-					<div class="text_description">
-						<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. 
-						</p>
+					<div class="h1_after"></div>
+					<div class="text_descrition_parent">
+						<div class="text_description">
+							<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into sstiff sections. 
+							</p>
+						</div>						
 					</div>
 					<br>
-					<div class="top_button">
-						<a href="#">read the rest</a>
-					</div>
-				</div>		
+<!-- 					<div class="top_button"> -->
+						<a class= "top_button" href="#">read the rest</a>
+<!-- 				</div> -->		
 			</div>
 		</section>
 		<section class="about">
-			<div class="title">
+			<div class="intro_text">
 				<img src="images/broccoli.png" alt="broccoli_icon">
 				<h2>Who & Why</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the evening. But Gregor found it easy to give up having the door open, he had, after all, often failed to make use of it when it was open and, without the family having noticed it, lain in his room in its darkest corner. One time, though, the charwoman left the door.</p>
@@ -80,7 +100,7 @@
 			</div>
 		</section>
 		<section class="news">
-			<div class="title">
+			<div class="intro_text">
 				<h2>Featured Articles</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
 			</div>
@@ -115,93 +135,100 @@
 		</section>
 		<section class="clients">
 			<div class ="content_clients">
-				<img src="images/vector-smart-object.png" alt="logos_of_clients">
+				<ul class="clients_logos">
+					<li class="client_logo">
+						<img src="images/client1.png" alt="logo of a client">
+					</li>	
+					<li class="client_logo">
+						<img src="images/client2.png" alt="logo of a client">
+					</li>
+					<li class="client_logo">
+						<img src="images/client3.png" alt="logo of a client">
+					</li>
+					<li class="client_logo">
+						<img src="images/client4.png" alt="logo of a client">
+					</li>
+					<li class="client_logo">
+						<img src="images/client5.png" alt="logo of a client">
+					</li>
+					<li class="client_logo">
+						<img src="images/client6.png" alt="logo of a client">
+					</li>
+				</ul>
 			</div>
 		</section>
 		<section class="portfolio">
-			<div class="title">
+			<div class="intro_text">
 				<h2>Portfolio & Screenshots</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
 			</div>
-				<menu class="portfolio_tabs_wrap">
-					<ul class="portfolio_tabs">
-						<li class="portfolio_tabs_item">
-							<a href="#">Art</a>
-						</li>
-						<li class="portfolio_tabs_item">
-							<a href="#">Mystery</a>
-						</li>
-						<li class="portfolio_tabs_item">
-							<a href="#">Illusion</a>
-						</li>
-						<li class="portfolio_tabs_item">
-							<a href="#">Travel</a>
-						</li>
-						<li class="portfolio_tabs_item">
-							<a href="#">Paintings</a>
-						</li>
-					</ul>
-				</menu>
-				<div class="portfolio_wrap">
-					<ul class="portfolio_list">
-						<li class="portfolio_item">
-							<img src="images/portfolio1.png" alt="Portfolio item 1">
-						</li>
-						<li class="portfolio_item">
-							<img src="images/portfolio2.png" alt="Portfolio item 2">
-						</li>
-						<li class="portfolio_item">
-							<img src="images/portfolio3.png" alt="Portfolio item 3">
-						</li>
-						<li class="portfolio_item">
-							<!-- <img src="images/portfolio4.png" alt="Portfolio item 4"> -->
-						</li>
-					</ul>
-				</div>
-				<div class="circles_pagination">
-					<div class="circle_page"></div>
-					<div class="circle_page"></div>
-					<div class="circle_page"></div>
-					<div class="circle_page"></div>
-				</div>
-				<div class="citation">
-					<div class="citation_content">
-						<div class="citation_icon">
-							<img src="images/Citation_icon.png" alt="quote">
-						</div>
-						<p class="citation_text">
-							Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every<br> minute with love, grace & gratitude.
-						</p>
-						<p class="citation_author">
-							Denis Waitley
-						</p>
+			<nav class="portfolio_tabs">
+				<a class="portfolio_tabs_item" href="#">Art</a>
+				<a class="portfolio_tabs_item" href="#">Mystery</a>
+				<a class="portfolio_tabs_item" href="#">Illusion</a>
+				<a class="portfolio_tabs_item" href="#">Travel</a>
+				<a class="portfolio_tabs_item" href="#">Paintings</a>
+			</nav>
+			<div class="slick_slider">
+				<img src="images/portfolio1.png" alt="Portfolio item 1">
+				<img src="images/portfolio2.png" alt="Portfolio item 2">
+				<img src="images/portfolio3.png" alt="Portfolio item 3">
+				<img src="images/portfolio1.png" alt="Portfolio item 1">
+				<img src="images/portfolio2.png" alt="Portfolio item 2">
+				<img src="images/portfolio3.png" alt="Portfolio item 3">
+			</div>			
+			<div class="circles_pagination">
+				<div class="circle_page"></div>
+				<div class="circle_page"></div>
+				<div class="circle_page"></div>
+				<div class="circle_page"></div>
+			</div>
+			<div class="citation">
+				<div class="citation_content">
+					<div class="citation_icon">
+						<img src="images/Citation_icon.png" alt="quote">
 					</div>
+					<p class="citation_text">
+						Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every minute with love, grace & gratitude.
+					</p>
+					<p class="citation_author">
+						Denis Waitley
+					</p>
 				</div>
+			</div>
 		</section>
 		<section class="team">
-			<div class="title">
+			<div class="intro_text">
 				<h2>Team Members</h2>
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
 			</div>
 			<div class="carricatures">
 				<ul class="carricatures_list">
 					<li class="carricature">
-						<img src="images/face1.png" alt="carricture of team member">
+						<div class="carricature_img">
+							<img src="images/face1.png" alt="carricture of team member">
+						</div>
 						<h3>James Philly</h3>
-						<p>Lead Developer</p>
+						<p>Lead Developer</p>													
 					</li>
 					<li class="carricature">
-						<img src="images/face2.png" alt="carricture of team member">
+						<div class="carricature_img">
+							<img src="images/face2.png" alt="carricture of team member">
+						</div>
 						<h3>Cactus Jack</h3>
 						<p>3D Model Designer</p>
 					</li>
 					<li class="carricature">
-						<img src="images/face3.png" alt="carricture of team member">
+						<div class="carricature_img">
+							<img src="images/face3.png" alt="carricture of team member">
+						</div>
 						<h3>Jack Sparrow</h3>
 						<p>Master of All Trade</p>
 					</li>
 					<li class="carricature">
-						<img src="images/face4.png" alt="carricture of team member">
+						<div class="carricature_img">
+							<img src="images/face4.png" alt="carricture of team member">
+						</div>
 						<h3>Yaga Squarehead</h3>
 						<p>Manages Money</p>
 					</li>
@@ -209,27 +236,25 @@
 		</section>
 		<section class="facts">
 			<h2>Facts & Numbers</h2>
-			<div class="facts_text">
-					<ul class="facts_list">
-						<li class="facts_item">
-							<h3>110</h3>
-							<p>successful projects</p>							
-						</li>
-						<li class="facts_item">
-							<h3>25</h3>
-							<p>awesome clients</p>							
-						</li>
-						<li class="facts_item">
-							<h3>30</h3>
-							<p>open source plugins</p>							
-						</li>
-						<li class="facts_item">
-							<h3>13</h3>
-							<p>open source themes</p>							
-						</li>
-					</ul>	
-					<div class="facts_background"></div>			
-			</div>
+				<ul class="facts_list">
+					<li class="facts_item">
+						<h3>110</h3>
+						<p>successful projects</p>							
+					</li>
+					<li class="facts_item">
+						<h3>25</h3>
+						<p>awesome 
+						</p>							
+					</li>
+					<li class="facts_item">
+						<h3>30</h3>
+						<p>open source plugins</p>							
+					</li>
+					<li class="facts_item">
+						<h3>13</h3>
+						<p>open source themes</p>							
+					</li>
+				</ul>	
 		</section>
 		<section class="blog_articles">
 			<div class="blog_articles_wrap">
@@ -301,61 +326,82 @@
 				</ul>				
 			</div>
 		</section>
-	</div>	
-	<section class="tweets">
-		<div class="tweets_content">
-			<div class="tweeter_icon">
-				<img src="images/twitter_icon.png" alt="twitter_icon">
+		<section class="tweets">
+			<div class="tweets_content">
+				<div class="tweeter_icon">
+					<img src="images/twitter_icon.png" alt="twitter_icon">
+				</div>
+				<div class="tweets_text">
+					<img src="images/photo2.png" alt="photo">
+					<p class="tweets_message">
+						Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every minute with love, grace & gratitude.
+					</p>				
+					<p class="tweets_signature">@loveless
+					</p>
+				</div>
 			</div>
-			<div class="tweets_text">
-				<img src="images/photo2.png" alt="photo">
-				<p class="tweets_message">
-					Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every <br> minute with love, grace & gratitude.
-				</p>				
-				<p class="tweets_signature">@loveless
-				</p>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="footer_content">
-			<div class="footer_top clearfix">
-				<div class="top_left">
-					<div class="footer_intro">	
-						<img src="images/logo_white.png" alt="logotype">
-							<p> One morning, when Gregor Samsa woke from troubled dreams, he found </br>himself transformed in his bed into a horrible vermin. He lay on his</p>
-					</div>
-					<div class="footer_form">
-					<form class="contact_form clearfix">
-						
-						<input class="email_field" type="text" placeholder="Email" name="user_name">
+		</section>
+		<footer>
+			<div class="footer_content">
+				<div class="footer_top clearfix">
+					<div class="top_left">
+						<div class="footer_intro">	
+							<img src="images/logo_white.png" alt="logotype">
+								<p> One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his</p>
+						</div>
+						<div class="footer_form">
+							<form class="contact_form clearfix">
+								
+								<input class="email_field" type="text" placeholder="Email" name="user_name">
 
-						<input class="subject_field" type="text" placeholder="Subject" name="user_email">
+								<input class="subject_field" type="text" placeholder="Subject" name="user_email">
 
-						<textarea class="message_field" placeholder="Message" name=""></textarea>
-
-						<input class="form_button" type="submit" name="button" value="Send">
-
-					</form>
-<!-- 						<button>
-							<a href="#">Send</a>
-							<div class="send_triangle">
-
-							</div>	
-						</button>  -->
-				
-					</div>
-				</div>	
-				<div class="top_right">
-					<div class="footer_links">
-						<ul class="links_list">
-							<li class="link_column">
-								<h3>Links</h3>	
+								<textarea class="message_field" placeholder="Message" name=""></textarea>
+								<button class="form_button" type="submit" name="button">Send</button>
+									<div class="triangle">
+										<img src="images/triangle.png" alt="triangle_icon">
+									</div>
+								</button>
+							</form>
+						</div>
+					</div>	
+					<div class="top_right">
+						<div class="footer_links">
+							<ul class="links_list">
+								<li class="link_column">
+									<h3>Links</h3>	
+										<ul class="list_inside">
+											<li>
+												<a href="#">Home</a>
+											</li>
+											<li>
+												<a href="#">Services</a>
+											</li>
+											<li>
+												<a href="#">Menu</a>
+											</li>
+											<li>
+												<a href="#">Restaurants</a>
+											</li>
+											<li>
+												<a href="#">About</a>
+											</li>
+											<li>
+												<a href="#">Work Hours</a>
+											</li>	
+											<li>
+												<a href="#">Call Hours</a>
+											</li>
+										</ul>
+								</li>
+								<li class="link_column">
+									<h3>Friends</h3>	
 									<ul class="list_inside">
 										<li>
 											<a href="#">Home</a>
 										</li>
 										<li>
+											<a href="#">About</a>
 										</li>	
 										<li>
 											<a href="#">Services</a>
@@ -366,101 +412,124 @@
 										<li>
 											<a href="#">Restaurants</a>
 										</li>
+									</ul>
+								</li>
+								<li class="link_column">
+									<h3>Social</h3>	
+									<ul class="list_inside">
 										<li>
-											<a href="#">About</a>
+											<a href="#">Facebook</a>
 										</li>
 										<li>
-											<a href="#">Work Hours</a>
+											<a href="#">Twitter</a>
 										</li>	
 										<li>
-											<a href="#">Call Hours</a>
+											<a href="#">Github</a>
+										</li>
+										<li>
+											<a href="#">Pinterest</a>
+										</li>
+										<li>
+											<a href="#">Google Plus</a>
+										</li>
+										<li>
+											<a href="#">Dribble</a>
+										</li>
+										<li>
+											<a href="#">Flickr</a>
+										</li>
+										<li>
+											<a href="#">Others</a>
 										</li>
 									</ul>
-							</li>
-							<li class="link_column">
-								<h3>Friends</h3>	
-								<ul class="list_inside">
-									<li>
-										<a href="#">Home</a>
-									</li>
-									<li>
-										<a href="#">About</a>
-									</li>	
-									<li>
-										<a href="#">Services</a>
-									</li>
-									<li>
-										<a href="#">Menu</a>
-									</li>
-									<li>
-										<a href="#">Restaurants</a>
-									</li>
-								</ul>
-							</li>
-							<li class="link_column">
-								<h3>Social</h3>	
-								<ul class="list_inside">
-									<li>
-										<a href="#">Facebook</a>
-									</li>
-									<li>
-										<a href="#">Twitter</a>
-									</li>	
-									<li>
-										<a href="#">Github</a>
-									</li>
-									<li>
-										<a href="#">Pinterest</a>
-									</li>
-									<li>
-										<a href="#">Google Plus</a>
-									</li>
-									<li>
-										<a href="#">Dribble</a>
-									</li>
-									<li>
-										<a href="#">Flickr</a>
-									</li>
-									<li>
-										<a href="#">Others</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="footer_bottom cleafix">
-				<div class="bottom_left">
-					<p> One morning, when Gregor Samsa woke from troubled dreams, he found <br> © 2015 Your Awesome Company 
-					</p>				
+				<div class="footer_bottom clearfix">
+					<div class="bottom_left">
+						<p> One morning, when Gregor Samsa woke from troubled dreams, he found <br> © 2015 Your Awesome Company 
+						</p>				
+					</div>
+					<div class="bottom_right">
+						<ul class="right_list">
+							<li class="right_list_item">
+								<a href="#">Terms</a>
+							</li>
+							<li class="right_list_item">
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li class="right_list_item">
+								<a href="#">Contact</a>
+							</li>
+							<li class="right_list_item">
+								<a href="#">Job</a>
+							</li>
+						</ul>
+					</div>			
 				</div>
-				<div class="bottom_right">
-					<ul class="right_list">
-						<li class="right_list_item">
-							<a href="#">Terms</a>
-						</li>
-						<li class="right_list_item">
-							<a href="#">Privacy Policy</a>
-						</li>
-						<li class="right_list_item">
-							<a href="#">Contact</a>
-						</li>
-						<li class="right_list_item">
-							<a href="#">Job</a>
-						</li>
-					</ul>
-				</div>			
 			</div>
-		</div>
-	</footer> 
+		</footer> 
+	</div>	
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script type="text/javascript">
+    $(document).ready(function(){
+	      $('.slick_slider').slick({
+		  dots: true,
+		  infinite: false,
+		  speed: 1500,
+		  slidesToShow: 4,
+		  autoplay:true,
+		  autoplaySpeed:200,
+		  slidesToScroll: 4,
+		  responsive: [
+			{
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 4,
+		        slidesToScroll: 4,
+		        infinite: true,
+		        dots: true
+		       }
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 3,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 240,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		    // You can unslick at a given breakpoint now by adding:
+		    // settings: "unslick"
+		    // instead of a settings object
+		  ]
+		});
+    });
+  </script>
+	
+
 </body>
 </html>
-
-
-
-
-
-
-
-
