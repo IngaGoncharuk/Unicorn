@@ -7,28 +7,11 @@
 	<link rel="stylesheet" href="style/style.css">
 	<link href="https://fonts.googleapis.com/
 	css?family=Source+Sans+Pro:400,500,700" rel="stylesheet">
-<!-- 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> -->
-<!-- 			<div class="portfolio_wrap">
-				<ul class="portfolio_list">
-					<li class="portfolio_item">
-						<img src="images/portfolio1.png" alt="Portfolio item 1">
-					</li>
-					<li class="portfolio_item">
-						<img src="images/portfolio2.png" alt="Portfolio item 2">
-					</li>
-					<li class="portfolio_item">
-						<img src="images/portfolio3.png" alt="Portfolio item 3">
-					</li>
-
-				</ul>
-			</div> -->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<!-- 					<li class="portfolio_item">
-						<img src="images/portfolio4.png" alt="Portfolio item 4">
-					</li> -->
 <body>
 	<div class="main_wrap">
 		<section class="header_wrap">
@@ -163,19 +146,34 @@
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
 			</div>
 			<nav class="portfolio_tabs">
-				<a class="portfolio_tabs_item" href="#">Art</a>
-				<a class="portfolio_tabs_item" href="#">Mystery</a>
-				<a class="portfolio_tabs_item" href="#">Illusion</a>
-				<a class="portfolio_tabs_item" href="#">Travel</a>
-				<a class="portfolio_tabs_item" href="#">Paintings</a>
+				<button class="js-btn-art portfolio_tabs_item">Art</button>
+				<button class="js-btn-mystery portfolio_tabs_item">Mystery</button>
+				<button class="js-btn-illusion portfolio_tabs_item">Illusion</button>
+				<button class="js-btn-travel portfolio_tabs_item">Travel</button>
+				<button class="js-btn-paintings portfolio_tabs_item">Paintings</button>
 			</nav>
+			
 			<div class="slick_slider">
-				<img src="images/portfolio1.png" alt="Portfolio item 1">
-				<img src="images/portfolio2.png" alt="Portfolio item 2">
-				<img src="images/portfolio3.png" alt="Portfolio item 3">
-				<img src="images/portfolio1.png" alt="Portfolio item 1">
-				<img src="images/portfolio2.png" alt="Portfolio item 2">
-				<img src="images/portfolio3.png" alt="Portfolio item 3">
+				<img class="portfolio_img portfolio_img_art" src="images/art1.jpg" alt="Portfolio item 1">
+				<img class="portfolio_img portfolio_img_mystery" src="images/mystery1.jpg" alt="Portfolio item 5">
+				<img class="portfolio_img portfolio_img_illusion" src="images/illusion1.jpg" alt="Portfolio item 9">
+				<img class="portfolio_img portfolio_img_travel" src="images/travel2.jpg" alt="Portfolio item 14">
+				<img class="portfolio_img portfolio_img_mystery" src="images/mystery2.jpg" alt="Portfolio item 6">
+				<img class="portfolio_img portfolio_img_art" src="images/art2.jpg" alt="Portfolio item 2">
+				<img class="portfolio_img portfolio_img_art" src="images/art3.jpg" alt="Portfolio item 3">
+				<img class="portfolio_img portfolio_img_art" src="images/art4.jpg" alt="Portfolio item 4">
+				<img class="portfolio_img portfolio_img_mystery" src="images/mystery3.jpg" alt="Portfolio item 7">
+				<img class="portfolio_img portfolio_img_mystery" src="images/mystery4.jpg" alt="Portfolio item 8">
+				<img class="portfolio_img portfolio_img_illusion" src="images/illusion2.jpg" alt="Portfolio item 10">
+				<img class="portfolio_img portfolio_img_illusion" src="images/illusion3.jpg" alt="Portfolio item 11">
+				<img class="portfolio_img portfolio_img_illusion" src="images/illusion4.jpg" alt="Portfolio item 12">
+				<img class="portfolio_img portfolio_img_travel" src="images/travel1.jpg" alt="Portfolio item 13">	
+				<img class="portfolio_img portfolio_img_travel" src="images/travel3.jpg" alt="Portfolio item 15">
+				<img class="portfolio_img portfolio_img_travel" src="images/travel4.jpg" alt="Portfolio item 16">
+				<img class="portfolio_img portfolio_img_paintings" src="images/paintings1.jpg" alt="Portfolio item 17">
+				<img class="portfolio_img portfolio_img_paintings" src="images/paintings2.jpg" alt="Portfolio item 18">
+				<img class="portfolio_img portfolio_img_paintings" src="images/paintings3.jpg" alt="Portfolio item 19">
+				<img class="portfolio_img portfolio_img_paintings" src="images/paintings4.jpg" alt="Portfolio item 20">
 			</div>			
 			<div class="circles_pagination">
 				<div class="circle_page"></div>
@@ -239,12 +237,11 @@
 				<ul class="facts_list">
 					<li class="facts_item">
 						<h3>110</h3>
-						<p>successful projects</p>							
+						<p>successful projects</p>						
 					</li>
 					<li class="facts_item">
 						<h3>25</h3>
-						<p>awesome 
-						</p>							
+						<p>awesome </p>							
 					</li>
 					<li class="facts_item">
 						<h3>30</h3>
@@ -252,7 +249,7 @@
 					</li>
 					<li class="facts_item">
 						<h3>13</h3>
-						<p>open source themes</p>							
+						<p>open source themes</p>						
 					</li>
 				</ul>	
 		</section>
@@ -448,10 +445,6 @@
 					</div>
 				</div>
 				<div class="footer_bottom clearfix">
-					<div class="bottom_left">
-						<p> One morning, when Gregor Samsa woke from troubled dreams, he found <br> © 2015 Your Awesome Company 
-						</p>				
-					</div>
 					<div class="bottom_right">
 						<ul class="right_list">
 							<li class="right_list_item">
@@ -468,11 +461,16 @@
 							</li>
 						</ul>
 					</div>			
+					<div class="bottom_left">
+						<p> One morning, when Gregor Samsa woke from troubled dreams, he found <br> © 2015 Your Awesome Company 
+						</p>				
+					</div>
+
 				</div>
 			</div>
 		</footer> 
 	</div>	
-	
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -480,15 +478,104 @@
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 
 	<script type="text/javascript">
-    $(document).ready(function(){
-	      $('.slick_slider').slick({
+    $(document).ready(function() {
+    	var slider = $('.slick_slider');
+    	$('.js-btn-art').click(function () {
+			slider.slick('unslick');
+			var x = document.querySelectorAll(".portfolio_img_art");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "block";
+			}
+		  	var x = document.querySelectorAll(".portfolio_img_mystery");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}						
+			slider.slick(sliderParams);
+    	});
+    	$('.js-btn-mystery').click(function () {
+			slider.slick('unslick');
+			var x = document.querySelectorAll(".portfolio_img_mystery");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "block";
+			}
+		  	var x = document.querySelectorAll(".portfolio_img_art");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}			
+			slider.slick(sliderParams);
+    	});
+    	$('.js-btn-illusion').click(function () {
+			slider.slick('unslick');
+			var x = document.querySelectorAll(".portfolio_img_illusion");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "block";
+			}
+		  	var x = document.querySelectorAll(".portfolio_img_mystery");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}	
+		  	var x = document.querySelectorAll(".portfolio_img_art");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}	
+		  	var x = document.querySelectorAll(".portfolio_img_travel");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}		
+			slider.slick(sliderParams);
+    	});
+    	$('.js-btn-travel').click(function () {
+			slider.slick('unslick');
+			var x = document.querySelectorAll(".portfolio_img_travel");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "block";
+			}
+		  	var x = document.querySelectorAll(".portfolio_img_mystery");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}	
+		  	var x = document.querySelectorAll(".portfolio_img_art");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		  	var x = document.querySelectorAll(".portfolio_img_illusion");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}		
+			slider.slick(sliderParams);
+    	});
+    	$('.js-btn-paintings').click(function () {
+			slider.slick('unslick');
+			var x = document.querySelectorAll(".portfolio_img_paintings");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "block";
+			}
+		  	var x = document.querySelectorAll(".portfolio_img_mystery");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}	
+		  	var x = document.querySelectorAll(".portfolio_img_art");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		  	var x = document.querySelectorAll(".portfolio_img_illusion");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}	
+		  	var x = document.querySelectorAll(".portfolio_img_travel");
+		  	for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}		
+			slider.slick(sliderParams);
+    	});
+    	var sliderParams = {
 		  dots: true,
 		  infinite: false,
-		  speed: 1500,
+		  speed: 1200,
 		  slidesToShow: 4,
-		  autoplay:true,
-		  autoplaySpeed:200,
-		  slidesToScroll: 4,
+		  // autoplay:true,
+		  autoplaySpeed:1200,
+		  slidesToScroll: 1,
 		  responsive: [
 			{
 		      breakpoint: 1024,
@@ -526,10 +613,9 @@
 		    // settings: "unslick"
 		    // instead of a settings object
 		  ]
-		});
+		};
+	    slider.slick(sliderParams);
     });
   </script>
-	
-
 </body>
 </html>
