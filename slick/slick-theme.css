@@ -98,19 +98,23 @@
 .slick-next
 {
     //right: -25px;
+    display:none;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
     //left: -25px;
+    display:none;
 }
 .slick-next:before
 {
     content: '→';
+    display:none;
 }
 [dir='rtl'] .slick-next:before
 {
     content: '←';
+    display:none;
 }
 
 /* Dots */

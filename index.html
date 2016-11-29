@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  	<script>
+	    jQuery(document).ready(function( $ ) {
+	        $('.counter').counterUp({
+	            delay: 10,
+	            time: 1000
+	        });
+	    });
+  	</script>
 	<meta charset="UTF-8">
 	<title>Unicorn</title>
 	<link rel="stylesheet" href="style/reset.css">
@@ -9,9 +18,10 @@
 	css?family=Source+Sans+Pro:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 
+</head>
 <body>
 	<div class="main_wrap">
 		<section class="header_wrap">
@@ -21,10 +31,10 @@
 						<img src="images/logo.png" alt="logotype">
 					</figure>
 					<menu class="menu_wrap">
-						<a class="menu_item" href="#">Home</a>
-						<a class="menu_item" href="#">About</a>
-						<a class="menu_item" href="#">Stories</a>
-						<a class="menu_item" href="#">Hello</a>
+						<a class="menu_item hvr-border-fade" href="#">Home</a>
+						<a class="menu_item hvr-border-fade" href="#">About</a>
+						<a class="menu_item hvr-border-fade" href="#">Stories</a>
+						<a class="menu_item hvr-border-fade" href="#">Hello</a>
 					</menu>
 					<input type="checkbox" id="menu-btn">
 					<label for="menu-btn" class="burgher-menu">
@@ -52,7 +62,7 @@
 					</div>
 					<br>
 <!-- 					<div class="top_button"> -->
-						<a class= "top_button" href="#">read the rest</a>
+						<a class= "top_button hvr-sweep-to-right" href="#">read the rest</a>
 <!-- 				</div> -->		
 			</div>
 		</section>
@@ -89,7 +99,7 @@
 			</div>
 			<div class="articles">
 				<ul class="articles_list">
-					<li class="article">
+					<li class="article hvr-overline-from-left">
 						<h3>comic</h3>
 						<p class="description">A million ways to die in the wild wild wild west</p>
 						<div class="author">
@@ -97,7 +107,7 @@
 							<p>Jimmy Jefferson<br>21/08/2013</p> 
 						</div>
 					</li>
-					<li class="article">
+					<li class="article hvr-overline-from-left">
 						<h3>lifestyle</h3>
 						<p class="description">The most comfortable chair comes with no backpain</p>
 						<div class="author">
@@ -105,7 +115,7 @@
 							<p>Gail Gutierrez<br>21/08/2013</p> 
 						</div>
 					</li>
-					<li class="article">
+					<li class="article hvr-overline-from-left">
 						<h3>travel</h3>
 						<p class="description">Journey to the center of the earth with jefferson </p>
 						<div class="author">
@@ -119,7 +129,20 @@
 		<section class="clients">
 			<div class ="content_clients">
 				<ul class="clients_logos">
-					<li class="client_logo">
+
+					<a class="example-image-link" href="images/client1_big.png" data-lightbox="clients_logos"><img class="client_logo" src="images/client1.png" alt="logo of a client"/></a>
+
+					<a class="example-image-link" href="images/client2_big.png" data-lightbox="clients_logos"><img class="client_logo" src="images/client2.png" alt="logo of a client"/></a>
+
+					<a class="example-image-link" href="images/client3_big.png" data-lightbox="clients_logos"><img class="client_logo" src="images/client3.png" alt="logo of a client"/></a>
+
+					<a class="example-image-link" href="images/client4_big.png" data-lightbox="clients_logos"><img class="client_logo" src="images/client4.png" alt="logo of a client"/></a>
+
+					<a class="example-image-link" href="images/client5_big.png" data-lightbox="clients_logos"><img class="client_logo" src="images/client5.png" alt="logo of a client"/></a>
+
+					<a class="example-image-link" href="images/client6_big.png" data-lightbox="clients_logos"><img class="client_logo" src="images/client6.png" alt="logo of a client"/></a>
+					
+<!-- 					<li class="client_logo">
 						<img src="images/client1.png" alt="logo of a client">
 					</li>	
 					<li class="client_logo">
@@ -136,7 +159,7 @@
 					</li>
 					<li class="client_logo">
 						<img src="images/client6.png" alt="logo of a client">
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</section>
@@ -146,19 +169,23 @@
 				<p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
 			</div>
 			<nav class="portfolio_tabs">
-				<button class="js-btn-art portfolio_tabs_item">Art</button>
-				<button class="js-btn-mystery portfolio_tabs_item">Mystery</button>
-				<button class="js-btn-illusion portfolio_tabs_item">Illusion</button>
-				<button class="js-btn-travel portfolio_tabs_item">Travel</button>
-				<button class="js-btn-paintings portfolio_tabs_item">Paintings</button>
+				<button class="js-btn-art portfolio_tabs_item hvr-border-fade">Art</button>
+				<button class="js-btn-mystery portfolio_tabs_item hvr-border-fade">Mystery</button>
+				<button class="js-btn-illusion portfolio_tabs_item hvr-border-fade">Illusion</button>
+				<button class="js-btn-travel portfolio_tabs_item hvr-border-fade">Travel</button>
+				<button class="js-btn-paintings portfolio_tabs_item hvr-border-fade">Paintings</button>
 			</nav>
 			
 			<div class="slick_slider">
+
+				<img class="portfolio_img portfolio_img_art" src="images/art5.jpg" alt="Portfolio item 5">
 				<img class="portfolio_img portfolio_img_art" src="images/art1.jpg" alt="Portfolio item 1">
 				<img class="portfolio_img portfolio_img_mystery" src="images/mystery1.jpg" alt="Portfolio item 5">
 				<img class="portfolio_img portfolio_img_illusion" src="images/illusion1.jpg" alt="Portfolio item 9">
 				<img class="portfolio_img portfolio_img_travel" src="images/travel2.jpg" alt="Portfolio item 14">
 				<img class="portfolio_img portfolio_img_mystery" src="images/mystery2.jpg" alt="Portfolio item 6">
+				<img class="portfolio_img portfolio_img_mystery" src="images/mystery5.jpg" alt="Portfolio item 6">
+				<img class="portfolio_img portfolio_img_mystery" src="images/mystery6.jpg" alt="Portfolio item 6">
 				<img class="portfolio_img portfolio_img_art" src="images/art2.jpg" alt="Portfolio item 2">
 				<img class="portfolio_img portfolio_img_art" src="images/art3.jpg" alt="Portfolio item 3">
 				<img class="portfolio_img portfolio_img_art" src="images/art4.jpg" alt="Portfolio item 4">
@@ -175,12 +202,12 @@
 				<img class="portfolio_img portfolio_img_paintings" src="images/paintings3.jpg" alt="Portfolio item 19">
 				<img class="portfolio_img portfolio_img_paintings" src="images/paintings4.jpg" alt="Portfolio item 20">
 			</div>			
-			<div class="circles_pagination">
+<!-- 			<div class="circles_pagination">
 				<div class="circle_page"></div>
 				<div class="circle_page"></div>
 				<div class="circle_page"></div>
 				<div class="circle_page"></div>
-			</div>
+			</div> -->
 			<div class="citation">
 				<div class="citation_content">
 					<div class="citation_icon">
@@ -206,12 +233,18 @@
 						<div class="carricature_img">
 							<img src="images/face1.png" alt="carricture of team member">
 						</div>
+						<div class="carricature_img_hover">
+							<img src="images/face1_hover.png" alt="carricture of team member under hover">
+						</div>
 						<h3>James Philly</h3>
 						<p>Lead Developer</p>													
 					</li>
 					<li class="carricature">
 						<div class="carricature_img">
 							<img src="images/face2.png" alt="carricture of team member">
+						</div>
+						<div class="carricature_img_hover">
+							<img src="images/face2_hover.png" alt="carricture of team member under hover">
 						</div>
 						<h3>Cactus Jack</h3>
 						<p>3D Model Designer</p>
@@ -220,12 +253,18 @@
 						<div class="carricature_img">
 							<img src="images/face3.png" alt="carricture of team member">
 						</div>
+						<div class="carricature_img_hover">
+							<img src="images/face3_hover.png" alt="carricture of team member under hover">
+						</div>
 						<h3>Jack Sparrow</h3>
 						<p>Master of All Trade</p>
 					</li>
 					<li class="carricature">
 						<div class="carricature_img">
 							<img src="images/face4.png" alt="carricture of team member">
+						</div>
+						<div class="carricature_img_hover">
+							<img src="images/face4_hover.png" alt="carricture of team member under hover">
 						</div>
 						<h3>Yaga Squarehead</h3>
 						<p>Manages Money</p>
@@ -236,19 +275,19 @@
 			<h2>Facts & Numbers</h2>
 				<ul class="facts_list">
 					<li class="facts_item">
-						<h3>110</h3>
+						<span class="counter">110</span>
 						<p>successful projects</p>						
 					</li>
 					<li class="facts_item">
-						<h3>25</h3>
+						<span class="counter">25</span>
 						<p>awesome </p>							
 					</li>
 					<li class="facts_item">
-						<h3>30</h3>
+						<span class="counter">30</span>
 						<p>open source plugins</p>							
 					</li>
 					<li class="facts_item">
-						<h3>13</h3>
+						<span class="counter">13</span>
 						<p>open source themes</p>						
 					</li>
 				</ul>	
@@ -471,6 +510,12 @@
 		</footer> 
 	</div>	
 
+	<script script type="text/javascript" src="Counter-Up-master/jquery.counterup.min.js"></script>
+
+	<script src="lightbox2-master/dist/js/lightbox.min.js"></script>
+
+	<script script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -480,94 +525,28 @@
 	<script type="text/javascript">
     $(document).ready(function() {
     	var slider = $('.slick_slider');
+    	
     	$('.js-btn-art').click(function () {
-			slider.slick('unslick');
-			var x = document.querySelectorAll(".portfolio_img_art");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "block";
-			}
-		  	var x = document.querySelectorAll(".portfolio_img_mystery");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}						
-			slider.slick(sliderParams);
+    		$('.slick_slider').slick('slickUnfilter');
+    		$('.slick_slider').slick('slickFilter','.portfolio_img_art');
     	});
     	$('.js-btn-mystery').click(function () {
-			slider.slick('unslick');
-			var x = document.querySelectorAll(".portfolio_img_mystery");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "block";
-			}
-		  	var x = document.querySelectorAll(".portfolio_img_art");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}			
-			slider.slick(sliderParams);
+    		$('.slick_slider').slick('slickUnfilter');
+    		$('.slick_slider').slick('slickFilter','.portfolio_img_mystery');
     	});
     	$('.js-btn-illusion').click(function () {
-			slider.slick('unslick');
-			var x = document.querySelectorAll(".portfolio_img_illusion");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "block";
-			}
-		  	var x = document.querySelectorAll(".portfolio_img_mystery");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}	
-		  	var x = document.querySelectorAll(".portfolio_img_art");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}	
-		  	var x = document.querySelectorAll(".portfolio_img_travel");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}		
-			slider.slick(sliderParams);
+			$('.slick_slider').slick('slickUnfilter');
+    		$('.slick_slider').slick('slickFilter','.portfolio_img_illusion');
     	});
     	$('.js-btn-travel').click(function () {
-			slider.slick('unslick');
-			var x = document.querySelectorAll(".portfolio_img_travel");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "block";
-			}
-		  	var x = document.querySelectorAll(".portfolio_img_mystery");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}	
-		  	var x = document.querySelectorAll(".portfolio_img_art");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-		  	var x = document.querySelectorAll(".portfolio_img_illusion");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}		
-			slider.slick(sliderParams);
+    		$('.slick_slider').slick('slickUnfilter');
+    		$('.slick_slider').slick('slickFilter','.portfolio_img_travel');
     	});
     	$('.js-btn-paintings').click(function () {
-			slider.slick('unslick');
-			var x = document.querySelectorAll(".portfolio_img_paintings");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "block";
-			}
-		  	var x = document.querySelectorAll(".portfolio_img_mystery");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}	
-		  	var x = document.querySelectorAll(".portfolio_img_art");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-		  	var x = document.querySelectorAll(".portfolio_img_illusion");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}	
-		  	var x = document.querySelectorAll(".portfolio_img_travel");
-		  	for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}		
-			slider.slick(sliderParams);
+    		$('.slick_slider').slick('slickUnfilter');
+    		$('.slick_slider').slick('slickFilter','.portfolio_img_paintings');
     	});
+
     	var sliderParams = {
 		  dots: true,
 		  infinite: false,
@@ -616,6 +595,22 @@
 		};
 	    slider.slick(sliderParams);
     });
+
   </script>
+
+  <script>
+    jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+    <!-- <span><span class="counter circle">12345</span></span> -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+<script src="../jquery.counterup.min.js"></script>
+
+
 </body>
 </html>
